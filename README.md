@@ -10,7 +10,7 @@
 [NodeJS](https://nodejs.org/en/), [Docker](https://www.docker.com/) и
 [Docker Compose](https://docs.docker.com/compose/).
 
-### Получить Google API ключ
+## Получить Google API ключ
 1. Заходим в https://console.developers.google.com
 1. Справа от логотипа нажимаем на выпадающий список и создаём новый проект
 1. Для **Project name** вводим yt-playlist-discovery
@@ -24,7 +24,7 @@
 1. Нажимаем **What credentials do I need?**
 1. Копируем созданный API ключ и вставляем его в .env файл
 
-### Настройка и запуск
+## Настройка и запуск
 1. Задать переменные окружения
 
     Переменные окружения задаются автоматически с помощью пакета
