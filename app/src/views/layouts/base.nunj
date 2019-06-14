@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        {% block title %}
+            YouTube Music Playlist Discovery
+        {% endblock %}
+    </title>
+    <script defer src="/index.bundle.js"></script>
+    <link href="/bundle.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    {% block head %}
+
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+
+{% endblock %}
+</body>
+</html>

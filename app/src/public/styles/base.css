@@ -1,0 +1,95 @@
+*,
+*:after,
+*:before {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --input-height: 30px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    /*https://unsplash.com/photos/bkGwwU_MNow*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgb(0, 0, 0), rgb(0, 0, 0)), url(/images/background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: var(--header-text-color);
+    font-size: 2em;
+    padding: 15px 0;
+}
+
+select {
+    color: var(--input-text-color);
+    background-color: var(--input-bg-color);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin: 15px 0 0 0;
+    outline: none;
+    padding: 0 10px;
+    width: 100%;
+}
+
+
+option {
+    background-color: var(--select-option-bg-color);
+    color: var(--select-option-text-color);
+    padding: 5px 0;
+}
+
+form {
+    margin: 10px 0 30px 0;
+}
+
+input {
+    color: var(--input-text-color);;
+    background-color: var(--input-bg-color);
+    border: none;
+    border-radius: 5px;
+    height: var(--input-height);
+    padding: 0 10px;
+    outline: none;
+    width: 100%;
+}
+
+input::placeholder {
+    color: var(--placeholder-text-color);
+}
+
+
+input[type="submit"] {
+    color: var(--input-text-color);
+    background-color: var(--input-bg-color);
+    border: none;
+    border-radius: 5px;
+    height: var(--input-height);
+    outline: none;
+    transition: padding-right 0.3s;
+    width: auto;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+    padding-right: 35px;
+}
+
+input[type="submit"]:hover:disabled {
+    cursor: default;
+}
+

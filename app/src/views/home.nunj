@@ -1,0 +1,30 @@
+{% extends "layouts/base.nunj" %}
+
+{% block body %}
+    <main class="home">
+        <section class="home-content">
+            <div class="home-content__header">
+                <h1>Discover YouTube Music Playlists</h1>
+            </div>
+            <select name="playlists" id="Playlists">
+                {% for playlist in playlists %}
+                    <option value="{{ playlist.id }}">{{ playlist.name }}</option>
+                {% endfor %}
+            </select>
+            <form class="playlists" id="playlistForm" name="playlistForm">
+                <input id="playlistFormID" type="text" name="id" placeholder="Playlist URL"/><br/>
+                <div class="submit-field">
+                    <input type="submit" value="Add playlist"/>
+                    <div class="lds-ring">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <div id="player"></div>
+        </section>
+    </main>
+{% endblock %}

@@ -1,0 +1,30 @@
+{
+  "name": "youtube-playlist-discovery",
+  "scripts": {
+    "build": "webpack",
+    "clean": "rimraf ./src/dist/*",
+    "gen": "sequelize migration:generate",
+    "migrate": "sequelize db:migrate",
+    "start": "npm run clean && npm run build && node src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "isomorphic-fetch": "^2.2.1",
+    "nunjucks": "^3.2.0",
+    "rimraf": "^2.6.3",
+    "sequelize": "^5.8.6",
+    "sequelize-cli": "^5.4.0",
+    "pg": "^7.11.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/node": "^12.0.2",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^2.1.1",
+    "mini-css-extract-plugin": "^0.6.0",
+    "nodemon": "^1.19.0",
+    "webpack": "^4.32.1",
+    "webpack-cli": "^3.3.2"
+  }
+}
